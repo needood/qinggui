@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">早道 - 每天从目标开始</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <div class="logo"  data-i18n="appName">早道</div>
+            <div class="nav-links">
+                <a href="#features" data-i18n="nav.features">功能</a>
+                <a href="#about" data-i18n="nav.about">关于</a>
+                <a href="#download" class="cta-button" data-i18n="nav.coming_soon">即将上线</a>
+                <div class="language-switcher">
+                    <select id="languageSelect" onchange="changeLanguage(this.value)">
+                        <option value="en" >English</option>
+                        <option value="zh-CN" selected>中文</option>
+                        <option value="ja" >日本語</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1 data-i18n="hero.title">每天从目标开始</h1>
+            <p class="subtitle" data-i18n="hero.subtitle">将您的早晨转化为反思和成长的时刻</p>
+            <a href="#download" class="cta-button" data-i18n="hero.cta">即将上线</a>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <h2 data-i18n="features.title">主要功能</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3 data-i18n="features.reflection.title">早晨反思提示</h3>
+                <p data-i18n="features.reflection.desc">通过有意义的问题开启每一天</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tasks"></i>
+                <h3 data-i18n="features.tasks.title">任务管理</h3>
+                <p data-i18n="features.tasks.desc">轻松管理您的日常任务</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3 data-i18n="features.mood.title">情绪追踪</h3>
+                <p data-i18n="features.mood.desc">记录和可视化您的情绪变化</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3 data-i18n="features.insights.title">个人成长洞察</h3>
+                <p data-i18n="features.insights.desc">获取个性化的成长建议</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-showcase">
+        <div class="app-screenshots">
+            <img src="./assets/images/mood.png" alt="Mood Tracking" class="screenshot">
+            <img src="./assets/images/task.png" alt="Task Management" class="screenshot">
+            <img src="./assets/images/questions.png" alt="Morning Questions" class="screenshot">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 data-i18n="about.title">不只是另一个生产力应用</h2>
+            <p data-i18n="about.description">早道将任务管理与情绪检查相结合，帮助您建立更有意识和富有成效的生活方式。通过有意义的自我反思来开始您的一天，追踪您的情感之旅，并清晰地实现您的目标。</p>
+        </div>
+    </section>
+
+    <section class="coming-soon">
+        <h2 data-i18n="coming_soon.title">即将推出</h2>
+        <div class="feature-list">
+            <div class="coming-feature">
+                <i class="fas fa-chart-bar"></i>
+                <p data-i18n="coming_soon.features.analytics">情绪和生产力相关性分析</p>
+            </div>
+            <div class="coming-feature">
+                <i class="fas fa-user-check"></i>
+                <p data-i18n="coming_soon.features.insights">基于您的回答的个性化见解</p>
+            </div>
+            <div class="coming-feature">
+                <i class="fas fa-file-alt"></i>
+                <p data-i18n="coming_soon.features.reports">每周和每月健康报告</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2 data-i18n="download.title">即将上线</h2>
+        <p data-i18n="download.description">开始每一天的目标。下载早道，发现晨间反思如何改变您的日常生活。</p>
+        <div class="store-buttons">
+            
+            <div class="store-button disabled" data-coming-soon="">
+                <img src="./assets/images/app-store.svg" alt="App Store">
+            </div>
+            
+            
+            
+            <div class="store-button disabled" data-coming-soon="">
+                <img src="./assets/images/google-play.png" alt="Google Play">
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo"></div>
+            <div class="footer-links">
+                <a href="mailto:needood.yu@gmail.com" class="contact-link" data-i18n="nav.contact">联系我们</a>
+                <a href="https://morningquestions.app/privacy" target="_blank" rel="noopener noreferrer" data-i18n="nav.privacy">隐私政策</a>
+            </div>
+            <p>&copy; 2025 yu haoming. <span data-i18n="footer.rights">版权所有</span></p>
+        </div>
+    </footer>
+    <script src="js/i18n.js"></script>
+</body>
+</html> 
