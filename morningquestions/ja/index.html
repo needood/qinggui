@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">モーニングクエスチョン - 目的のある一日を始めましょう</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <div class="logo"  data-i18n="appName">モーニングクエスチョン</div>
+            <div class="nav-links">
+                <a href="#features" data-i18n="nav.features">機能</a>
+                <a href="#about" data-i18n="nav.about">概要</a>
+                <a href="#download" class="cta-button" data-i18n="nav.coming_soon">近日公開</a>
+                <div class="language-switcher">
+                    <select id="languageSelect" onchange="changeLanguage(this.value)">
+                        <option value="en" >English</option>
+                        <option value="zh-CN" >中文</option>
+                        <option value="ja" selected>日本語</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1 data-i18n="hero.title">目的のある一日を始めましょう</h1>
+            <p class="subtitle" data-i18n="hero.subtitle">朝の時間を振り返りと成長の瞬間に変えましょう</p>
+            <a href="#download" class="cta-button" data-i18n="hero.cta">近日公開</a>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <h2 data-i18n="features.title">主な機能</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3 data-i18n="features.reflection.title">朝の振り返り</h3>
+                <p data-i18n="features.reflection.desc">意味のある質問で一日をスタート</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tasks"></i>
+                <h3 data-i18n="features.tasks.title">タスク管理</h3>
+                <p data-i18n="features.tasks.desc">日々のタスクを簡単に管理</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3 data-i18n="features.mood.title">感情トラッキング</h3>
+                <p data-i18n="features.mood.desc">感情の変化を記録・可視化</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3 data-i18n="features.insights.title">パーソナルインサイト</h3>
+                <p data-i18n="features.insights.desc">個別化された成長のアドバイス</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-showcase">
+        <div class="app-screenshots">
+            <img src="./assets/images/mood.png" alt="Mood Tracking" class="screenshot">
+            <img src="./assets/images/task.png" alt="Task Management" class="screenshot">
+            <img src="./assets/images/questions.png" alt="Morning Questions" class="screenshot">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 data-i18n="about.title">単なる生産性アプリではありません</h2>
+            <p data-i18n="about.description">モーニングクエスチョンは、タスク管理と感情チェックを組み合わせ、より意識的で生産的なライフスタイルの構築をサポートします。意味のある自己振り返りで一日を始め、感情の旅を追跡し、目標を明確に達成しましょう。</p>
+        </div>
+    </section>
+
+    <section class="coming-soon">
+        <h2 data-i18n="coming_soon.title">近日公開予定</h2>
+        <div class="feature-list">
+            <div class="coming-feature">
+                <i class="fas fa-chart-bar"></i>
+                <p data-i18n="coming_soon.features.analytics">感情と生産性の相関分析</p>
+            </div>
+            <div class="coming-feature">
+                <i class="fas fa-user-check"></i>
+                <p data-i18n="coming_soon.features.insights">回答に基づくパーソナライズされたインサイト</p>
+            </div>
+            <div class="coming-feature">
+                <i class="fas fa-file-alt"></i>
+                <p data-i18n="coming_soon.features.reports">週次・月次ウェルネスレポート</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2 data-i18n="download.title">近日公開</h2>
+        <p data-i18n="download.description">目的を持って一日を始めましょう。モーニングクエスチョンをダウンロードして、朝の振り返りがどのように日常生活を変えるか体験してください。</p>
+        <div class="store-buttons">
+            
+            <div class="store-button disabled" data-coming-soon="近日公開">
+                <img src="./assets/images/app-store.svg" alt="App Store">
+            </div>
+            
+            
+            
+            <div class="store-button disabled" data-coming-soon="近日公開">
+                <img src="./assets/images/google-play.png" alt="Google Play">
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo"></div>
+            <div class="footer-links">
+                <a href="mailto:needood.yu@gmail.com" class="contact-link" data-i18n="nav.contact">お問い合わせ</a>
+                <a href="https://morningquestions.app/privacy" target="_blank" rel="noopener noreferrer" data-i18n="nav.privacy">プライバシーポリシー</a>
+            </div>
+            <p>&copy; 2025 yu haoming. <span data-i18n="footer.rights">All rights reserved</span></p>
+        </div>
+    </footer>
+    <script src="js/i18n.js"></script>
+</body>
+</html> 
